@@ -1,4 +1,5 @@
 import Navbar from "../Nav/Navbar";
+import Banner from "../banner/Banner";
 
 
 
@@ -9,7 +10,7 @@ const Header = () => {
             <Navbar></Navbar>
             </div>
             <div className="mb-12">
-            
+            <Banner></Banner>
             </div>
         </div>
     );
