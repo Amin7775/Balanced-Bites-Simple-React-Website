@@ -1,7 +1,13 @@
 import "./sidebar.css";
 
-const Sidebar = ({ wantToCook, handlePreparing, preparing , totalTime , totalCalories}) => {
-  console.log(preparing);
+const Sidebar = ({
+  wantToCook,
+  handlePreparing,
+  preparing,
+  totalTime,
+  totalCalories,
+}) => {
+  // console.log(preparing);
   return (
     <div className="border-2 rounded-2xl pt-8 pb-16 px-4">
       {/* want to cook section */}
@@ -65,18 +71,19 @@ const Sidebar = ({ wantToCook, handlePreparing, preparing , totalTime , totalCal
           <tbody>
             {preparing.map((recipe, index) => (
               <tr key={index} className="bg-[#28282808]">
-                <td className="pl-4 text-[#282828CC] font-semibold py-1">{index+1}</td>
+                <td className="pl-4 text-[#282828CC] font-semibold py-1">
+                  {index + 1}
+                </td>
                 <td className="px-2 py-1">{recipe.recipe_name}</td>
                 <td className="px-2 py-1">{recipe.preparing_time}</td>
                 <td className="px-2 py-1">{recipe.calories}</td>
               </tr>
             ))}
           </tbody>
-          
         </table>
         <div className="flex justify-between mt-3 font-semibold text-[#878787]">
-              <p>Total Time= {totalTime} Minutes</p>
-              <p>Total Calories= {totalCalories} Calories</p>
+          <p>Total Time= {totalTime} Minutes</p>
+          <p>Total Calories= {totalCalories} Calories</p>
         </div>
       </div>
     </div>

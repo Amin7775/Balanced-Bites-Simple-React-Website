@@ -1,6 +1,8 @@
 import { useState } from "react";
 import AllRecipes from "../AllRecipes/AllRecipes";
 import Sidebar from "../Sidebar/Sidebar";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Recipes = () => {
   const [wantToCook, setWantToCook] = useState([]);
@@ -18,8 +20,11 @@ const Recipes = () => {
       calories,
     } = recipe;
 
-    const find = wantToCook.find(recipeName => recipeName.recipe_name == recipe_name)
-    if(find){
+    const find = wantToCook.find(
+      (recipeName) => recipeName.recipe_name == recipe_name
+    );
+    if (find) {
+      toast("This Recipe Already Exists!");
       return;
     }
     const newWantToCook = [...wantToCook, recipe];
@@ -81,6 +86,7 @@ const Recipes = () => {
           ></Sidebar>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
