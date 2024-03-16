@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_image": "https://i.ibb.co/sqnw8pw/grilled-salmon-with-asparagus-white-plate-isolated-black-background.jpg",
+      "recipe_id": "001",
+      "recipe_name": "Grilled Salmon with Asparagus",
+      "short_description": "A healthy and flavorful dish featuring grilled salmon served with roasted asparagus.",
+      "ingredients": ["4 salmon fillets (6 oz each)", "1 lb asparagus spears", "2 tablespoons olive oil", "Salt and pepper to taste"],
+      "preparing_time": 20,
+      "calories": 320
+    },
+    {
+      "recipe_image": "https://i.ibb.co/jkq6y6b/Vegetable-Stir-Fry-with-Tofu.jpg",
+      "recipe_id": "002",
+      "recipe_name": "Vegetable Stir-Fry with Tofu",
+      "short_description": "A colorful and nutritious stir-fry made with assorted vegetables and tofu, seasoned with a savory sauce.",
+      "ingredients": ["1 block firm tofu (14 oz)", "2 cups broccoli florets", "1 bell pepper, sliced", "1 carrot, julienned", "3 cloves garlic, minced", "1/4 cup soy sauce", "2 tablespoons sesame oil"],
+      "preparing_time": 25,
+      "calories": 250
+    },
+    {
+      "recipe_image": "https://i.ibb.co/V2fCxfL/Caprese-Salad.jpg",
+      "recipe_id": "003",
+      "recipe_name": "Caprese Salad",
+      "short_description": "A simple and refreshing salad made with ripe tomatoes, fresh mozzarella, basil leaves, and balsamic glaze.",
+      "ingredients": ["2 large tomatoes", "8 oz fresh mozzarella cheese", "1/4 cup fresh basil leaves", "2 tablespoons balsamic glaze"],
+      "preparing_time": 10,
+      "calories": 180
+    },
+    {
+      "recipe_image": "https://i.ibb.co/dK6Z9z0/Quinoa-Salad-with-Chickpeas.jpg",
+      "recipe_id": "004",
+      "recipe_name": "Quinoa Salad with Chickpeas",
+      "short_description": "A protein-packed salad featuring quinoa, chickpeas, colorful vegetables, and a zesty lemon vinaigrette.",
+      "ingredients": ["1 cup quinoa, cooked", "1 can chickpeas (15 oz), drained and rinsed", "1 cup cherry tomatoes, halved", "1/2 English cucumber, diced", "1/4 cup red onion, finely chopped", "2 tablespoons fresh lemon juice", "2 tablespoons olive oil", "Salt and pepper to taste"],
+      "preparing_time": 15,
+      "calories": 280
+    },
+    {
+      "recipe_image": "https://i.ibb.co/tZH70zH/Mushroom-Risotto.jpg",
+      "recipe_id": "005",
+      "recipe_name": "Mushroom Risotto",
+      "short_description": "A creamy and comforting risotto dish made with Arborio rice, mushrooms, garlic, and Parmesan cheese.",
+      "ingredients": ["1 cup Arborio rice", "8 oz mushrooms (any variety)", "2 cloves garlic, minced", "4 cups vegetable broth", "1/4 cup grated Parmesan cheese", "2 tablespoons butter"],
+      "preparing_time": 40,
+      "calories": 350
+    },
+    {
+      "recipe_image": "https://i.ibb.co/T1GZYF3/Greek-Salad.jpg",
+      "recipe_id": "006",
+      "recipe_name": "Greek Salad",
+      "short_description": "A light and flavorful salad featuring crisp lettuce, juicy tomatoes, cucumbers, olives, and feta cheese.",
+      "ingredients": ["4 cups mixed salad greens", "2 large tomatoes, cut into wedges", "1 English cucumber, sliced", "1/2 cup Kalamata olives", "1/2 cup crumbled feta cheese", "2 tablespoons extra virgin olive oil", "1 tablespoon red wine vinegar", "Salt and pepper to taste"],
+      "preparing_time": 15,
+      "calories": 220
+    }
+  ]
+  
