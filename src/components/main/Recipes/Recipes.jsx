@@ -3,8 +3,22 @@ import AllRecipes from "../AllRecipes/AllRecipes";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Recipes = () => {
-  const [wantToCookCount, setWantToCookCount] = useState(0)
+  const [wantToCook, setWantToCook] = useState([])
 
+  const handleWantToCook = (recipe)=>{
+    const {
+      recipe_image,
+      recipe_name,
+      short_description,
+      ingredients,
+      preparing_time,
+      calories,
+    } = recipe;
+
+    const newWantToCook = [...wantToCook, recipe]
+    setWantToCook(newWantToCook)
+  }
+  
   return (
     <div className="my-14">
       {/* section header */}
@@ -21,11 +35,11 @@ const Recipes = () => {
       <div className="flex">
         {/* all Recipes section */}
         <div className="w-3/5">
-          <AllRecipes></AllRecipes>
+          <AllRecipes setWantToCook={setWantToCook} handleWantToCook={handleWantToCook}></AllRecipes>
         </div>
         {/* Sidebar section */}
         <div className="flex-1">
-        <Sidebar></Sidebar>
+        <Sidebar wantToCook={wantToCook}></Sidebar>
         </div>
       </div>
     </div>

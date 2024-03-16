@@ -1,7 +1,7 @@
 import watch from './../../../assets/images/Frame.png'
 import Cal from './../../../assets/images/Cal.png'
 
-const SingleRecipe = ({ recipe }) => {
+const SingleRecipe = ({ recipe, setWantToCook,handleWantToCook }) => {
   const {
     recipe_image,
     recipe_name,
@@ -47,7 +47,7 @@ const SingleRecipe = ({ recipe }) => {
                 </div>
             </div>
           <div className="card-actions mt-6">
-            <button className="btn bg-[#0BE58A] hover:bg-[#0BE58A]/[.85] px-6 rounded-[50px] text-lg ">Want To Cook</button>
+            <button onClick={()=>handleWantToCook(recipe)} className="btn bg-[#0BE58A] hover:bg-[#0BE58A]/[.85] px-6 rounded-[50px] text-lg ">Want To Cook</button>
           </div>
         </div>
       </div>
