@@ -1,7 +1,10 @@
+import { useState } from "react";
 import AllRecipes from "../AllRecipes/AllRecipes";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Recipes = () => {
+  const [wantToCookCount, setWantToCookCount] = useState(0)
+
   return (
     <div className="my-14">
       {/* section header */}
