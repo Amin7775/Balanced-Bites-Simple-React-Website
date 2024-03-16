@@ -11,8 +11,8 @@ const AllRecipes = ({setWantToCook,handleWantToCook}) => {
     },[])
     // console.log(allRecipe)/
     return (
-        <div className="border">
-            a
+        <div className="">
+            
             {/* cards */}
             <div className="grid grid-cols-2 gap-6">
                 {allRecipe.map(recipe =>(

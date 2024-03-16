@@ -29,8 +29,8 @@ const SingleRecipe = ({ recipe, setWantToCook,handleWantToCook }) => {
           <h2 className="text-xl font-medium">Ingredients : {ingredients.length}</h2>
             <div className="ml-2 text-[#878787] mt-3">
                 {   
-                    threeIngredient.map((ingredient)=>(
-                        <li>{ingredient}</li>
+                    threeIngredient.map((ingredient,index)=>(
+                        <li key={index}>{ingredient}</li>
                     ))
                 }
                 <p className="cursor-pointer mt-1">Click Here for more</p>

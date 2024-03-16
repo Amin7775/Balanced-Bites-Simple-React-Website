@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AllRecipes from "../AllRecipes/AllRecipes";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Recipes = () => {
   const [wantToCook, setWantToCook] = useState([])
+  const [preparing,setPreparing] = useState([])
+  const [totalTime , setTotalTime] = useState(0)
+  const [totalCalories , setTotalCalories] = useState(0)
+
+  // useEffect(()=>{
+  //   setWantToCook(wantToCook)
+  // },[wantToCook])
 
   const handleWantToCook = (recipe)=>{
     const {
@@ -18,7 +25,30 @@ const Recipes = () => {
     const newWantToCook = [...wantToCook, recipe]
     setWantToCook(newWantToCook)
   }
+
+  const handlePreparing=(recipe)=>{
+    // update wantToCook
+    const newCook = wantToCook.filter((newRecipeList)=>(
+      recipe.recipe_name !== newRecipeList.recipe_name
+    ))
+    setWantToCook(newCook)
+    // update Preparing section
+    const newPreparing = [...preparing,recipe]
+    setPreparing(newPreparing)
+    // update time
+    handleTotalTime(recipe.preparing_time)
+    // update calories
+    handleTotalCalories(recipe.calories)
+  }
   
+  const handleTotalTime = (time) => {
+      setTotalTime(time+totalTime)
+      // console.log(totalTime)
+  }
+  const handleTotalCalories = (calorie) => {
+      setTotalCalories(calorie+totalCalories)
+      // console.log(totalTime)
+  }
   return (
     <div className="my-14">
       {/* section header */}
@@ -32,14 +62,14 @@ const Recipes = () => {
       </div>
 
       {/* recipes main */}
-      <div className="flex">
+      <div className="flex gap-5">
         {/* all Recipes section */}
         <div className="w-3/5">
           <AllRecipes setWantToCook={setWantToCook} handleWantToCook={handleWantToCook}></AllRecipes>
         </div>
         {/* Sidebar section */}
         <div className="flex-1">
-        <Sidebar wantToCook={wantToCook}></Sidebar>
+        <Sidebar wantToCook={wantToCook} handlePreparing={handlePreparing} preparing={preparing} totalTime={totalTime} totalCalories={totalCalories}></Sidebar>
         </div>
       </div>
     </div>
