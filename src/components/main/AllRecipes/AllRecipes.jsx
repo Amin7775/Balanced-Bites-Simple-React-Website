@@ -14,7 +14,7 @@ const AllRecipes = ({setWantToCook,handleWantToCook}) => {
         <div className="">
             
             {/* cards */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {allRecipe.map(recipe =>(
                     <SingleRecipe key={recipe.recipe_id} recipe={recipe} setWantToCook={setWantToCook} handleWantToCook={handleWantToCook}></SingleRecipe>
                     ) 
