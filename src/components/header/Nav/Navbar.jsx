@@ -16,7 +16,7 @@ const Navbar = () => {
       <li className="mx-2"><a>Search</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-3xl font-semibold">Balanced Bites</a>
+    <a className="btn btn-ghost text-3xl font-bold">Balanced Bites</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-[#150B2BB3] font-medium">
